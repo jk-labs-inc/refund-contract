@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import "@openzeppelin/access/Ownable.sol";
 import "@openzeppelin/utils/Address.sol";
 
-contract AutoBuyContract is Ownable {
+contract RefundContract is Ownable {
 
     constructor() Ownable() {
     }
