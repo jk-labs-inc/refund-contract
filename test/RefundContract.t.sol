@@ -16,7 +16,7 @@ contract RefundContractTest is Test {
 
     function test1() public {
         vm.deal(TEST_SENDER, 1 ether);
-        vm.prank(TEST_SENDER);
+        vm.prank(TEST_SENDER, TEST_SENDER);
         (bool success, ) = address(refundContract).call{value: 1 ether}("");
 
         assertEq(success, true);
